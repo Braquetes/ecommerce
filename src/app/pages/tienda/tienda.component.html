@@ -1,0 +1,94 @@
+<div class="banner-top container-fluid" id="home">
+    <!-- header -->
+    <app-nav></app-nav>
+</div>
+<!-- banner -->
+<div class="banner_inner">
+    <div class="services-breadcrumb">
+        <div class="inner_breadcrumb">
+            <ul class="short">
+                <li>
+                    <a href="index.html">Home</a>
+                    <i>|</i>
+                </li>
+                <li>Shop</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--//banner -->
+<!--/shop-->
+<section class="banner-bottom-wthreelayouts py-lg-5 py-3">
+    <div class="container-fluid">
+        <div class="inner-sec-shop px-lg-4 px-3">
+            <h3 class="tittle-w3layouts my-lg-4 mt-3" *ngIf="categoria">{{categoria.categoria}}</h3>
+            <div class="row">
+                <!--/product right-->
+                <div class="left-ads-display col-lg-12">
+                    <div class="wrapper_top_shop">
+                        <!-- <div class="row">
+                                    <div class="col-md-6 shop_left">
+                                            <img src="images/banner3.jpg" alt="">
+                                            <h6>40% off</h6>
+                                        </div>
+                                        <div class="col-md-6 shop_right">
+                                            <img src="images/banner4.jpg" alt="">
+                                            <h6>50% off</h6>
+                                        </div>
+                    
+                            </div> -->
+                        <div class="row">
+                            <div *ngIf="productos.length == 0" class="single-right-left simpleCart_shelfItem" align="center">
+                                <h3 align="center">No existen productos con ese nombre o modelo</h3>
+                            </div>
+                            <div class="col-md-3 product-men women_two" *ngFor="let item of productos">
+                                <div class="product-googles-info googles">
+                                    <div class="men-pro-item">
+                                        <div class="men-thumb-item">
+                                            <img src="{{item.imagen}}" class="img-fluid" alt="" />
+                                            <div class="men-cart-pro">
+                                                <div class="inner-men-cart-pro">
+                                                    <a (click)="producto(item.idProducto)"
+                                                        class="link-product-add-cart">Detalles</a>
+                                                </div>
+                                            </div>
+                                            <span class="product-new-top">New</span>
+                                        </div>
+                                        <div class="item-info-product">
+                                            <div class="info-product-price">
+                                                <div class="grid_meta">
+                                                    <div class="product_price">
+                                                        <h4>
+                                                            <a (click)="producto(item.idProducto)">{{item.producto}}</a>
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                                <div class="googles single-item hvr-outline-out">
+                                                    <!-- <form action="#" method="post">
+                                                            <input type="hidden" name="cmd" value="_cart">
+                                                            <input type="hidden" name="add" value="1">
+                                                            <input type="hidden" name="googles_item" value="Farenheit">
+                                                            <input type="hidden" name="amount" value="575.00">
+                                                            <button type="submit" class="googles-cart pgoogles-cart">
+                                                                <i class="fas fa-cart-plus"></i>
+                                                            </button>
+                                                        </form> -->
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--//product right-->
+            </div>
+        </div>
+    </div>
+</section>
+<!--footer -->
+<app-footer></app-footer>
+<!-- //footer -->

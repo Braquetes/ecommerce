@@ -1,0 +1,93 @@
+<header>
+    <div class="row">
+        <div class="col-md-3 top-info text-left mt-lg-4">
+            <h6>Necesitas ayuda</h6>
+            <ul>
+                <li>
+                    <i class="fas fa-phone"></i>¡Llamanos!
+                </li>
+                <li class="number-phone mt-3">+52 9516888359</li>
+            </ul>
+        </div>
+        <div class="col-md-6 logo-w3layouts text-center">
+            <p><strong>Refaccionaria</strong></p>
+            <h1 class="logo-w3layouts">
+                <a class="navbar-brand" href="index.html">
+                    Refrilav</a>
+            </h1>
+        </div>
+
+        <div class="col-md-3 top-info-cart text-right mt-lg-4">
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0" (ngSubmit)="miForm(form)" #form="ngForm">
+                <input type="search" class="form-control" placeholder="Buscar..." name="search" [(ngModel)]="search">
+            </form>
+        </div>
+    </div>
+    <label class="top-log mx-auto"></label>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light top-header mb-2">
+
+        <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+
+            </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-mega mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link ml-lg-0" [routerLink]="['/']">Inicio
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li> -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Categorias
+                    </a>
+                    <ul class="dropdown-menu mega-menu ">
+                        <li>
+                            <div class="row">
+                                <div class="col-md-4 media-list span4 text-left">
+                                    <!-- <h5 class="tittle-w3layouts-sub"> Tittle goes here </h5> -->
+                                    <ul>
+                                        <li class="media-mini mt-3" *ngFor="let cat of categorias; let i=index" [hidden]="i>20">
+                                            <a (click)="categoria(cat.idCategoria)">{{cat.categoria}}</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 media-list span4 text-left">
+                                    <!-- <h5 class="tittle-w3layouts-sub"> Tittle goes here </h5> -->
+                                    <ul>
+                                        <li class="media-mini mt-3" *ngFor="let cat of categorias; let i=index" [hidden]="i<21 || i>40">
+                                            <a (click)="categoria(cat.idCategoria)">{{cat.categoria}}</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 media-list span4 text-left">
+                                    <!-- <h5 class="tittle-w3layouts-sub">Tittle goes here </h5> -->
+                                    <ul>
+                                        <li class="media-mini mt-3" *ngFor="let cat of categorias; let i=index" [hidden]="i<41 || i>60">
+                                            <a (click)="categoria(cat.idCategoria)">{{cat.categoria}}</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                        </li>
+                    </ul>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link" [routerLink]="['/tienda']">Tienda</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/contacto']">Contacto</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>

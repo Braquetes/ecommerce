@@ -1,0 +1,120 @@
+<div class="banner-top container-fluid" id="home">
+    <!-- header -->
+    <app-nav></app-nav>
+    <!-- banner -->
+    <div class="banner_inner">
+        <div class="services-breadcrumb">
+            <div class="inner_breadcrumb">
+
+                <ul class="short">
+                    <li>
+                        <a [routerLink]="['/']">Home</a>
+                        <i>|</i>
+                    </li>
+                    <li>Producto</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!--//banner -->
+<!--/shop-->
+<section class="banner-bottom-wthreelayouts py-lg-5 py-3">
+    <div class="container">
+        <div class="inner-sec-shop pt-lg-4 pt-3">
+            <div class="row">
+                <div class="col-lg-4 single-right-left ">
+                    <div class="grid images_3_of_2">
+                        <div class="flexslider1">
+
+                            <ul class="slides">
+                                <li>
+                                    <div class="thumb-image"> <img src="{{producto.imagen}}"
+                                            data-imagezoom="true" class="img-fluid" alt=" "> </div>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 single-right-left simpleCart_shelfItem">
+                    <h3>{{producto.producto}}</h3>
+                    <!-- <p><span class="item_price">$650</span>
+                                    <del>$1,199</del>
+                                </p> -->
+                    <div class="description">
+                        <h5><strong>Modelo: {{producto.modelo}}</strong></h5>
+                        <h5><strong>Marca: {{producto.marca}}</strong></h5>
+                    </div>
+<!-- 
+                    <div class="occasion-cart">
+                        <div class="googles single-item singlepage">
+
+                            <button class="googles-cart pgoogles-cart" href="https://wa.me/9514128776" target="_blank">
+                                Cotizar
+                            </button>
+                            <button >
+                                <a class="btn btn-dark" href="">Cotizar</a>
+                            </button>
+
+                        </div>
+                    </div> -->
+                    <ul class="footer-social text-left mt-lg-4 mt-3">
+                        <li>Cotizar en: </li>
+                        <li class="mx-2">
+                            <a href="https://web.facebook.com/messages/t/102167084947412" target="_blank">
+                                <span class="fab fa-facebook-messenger"></span>
+                            </a>
+                        </li>
+                        <li class="mx-2">
+                            <a href="https://wa.me/9514128776" target="_blank">
+                                <span class="fab fa-whatsapp"></span>
+                            </a>
+                        </li>
+                        <li class="mx-2">
+                            <a href="mailto:ventas_refrilav@hotmail.com" target="_blank">
+                                <span class="fab fa-google"></span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="clearfix"> </div>
+                <!--/tabs-->
+                <div class="responsive_tabs">
+                    <div id="horizontalTab">
+                        <ul class="resp-tabs-list">
+                            <li>Descripcion</li>
+                            <!-- <li>Reviews</li> -->
+                            <!-- <li>Information</li> -->
+                        </ul>
+                        <div class="resp-tabs-container">
+                            <!--/tab_one-->
+                            <div class="tab1">
+
+                                <div class="single_page">
+                                    <h6>{{producto.descripcion}}</h6>
+                                </div>
+                            </div>
+
+                            <div class="tab3">
+
+                                <div class="single_page">
+                                    <!-- <h6>{{producto.descripcion}}</h6> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--//tabs-->
+
+            </div>
+        </div>
+    </div>
+</section>
+<!--footer -->
+<app-footer></app-footer>
+<!-- //footer -->
