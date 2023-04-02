@@ -942,7 +942,7 @@ __webpack_require__.r(__webpack_exports__);
 class SearchService {
   constructor(http) {
     this.http = http;
-    this.URL = "http://refrilav-oaxaca.com/refaccionaria";
+    this.URL = "https://refrilav-oaxaca.com/refaccionaria";
   }
   search(search) {
     return this.http.get(`${this.URL}/admin/search.php?search=${search}`);

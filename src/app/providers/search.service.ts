@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class SearchService {
 
-  URL = "http://refrilav-oaxaca.com/refaccionaria";
+  URL = "https://refrilav-oaxaca.com/refaccionaria";
 
   constructor(private http: HttpClient) { }
 
