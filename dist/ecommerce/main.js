@@ -287,9 +287,9 @@ ContactoComponent.ɵfac = function ContactoComponent_Factory(t) {
 ContactoComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({
   type: ContactoComponent,
   selectors: [["app-contacto"]],
-  decls: 54,
+  decls: 73,
   vars: 2,
-  consts: [["id", "home", 1, "banner-top", "container-fluid"], [1, "banner_inner"], [1, "services-breadcrumb"], [1, "inner_breadcrumb"], [1, "short"], [3, "routerLink"], [1, "banner-bottom-wthreelayouts", "py-lg-5", "py-3"], [1, "container"], [1, "tittle-w3layouts", "text-center", "my-lg-4", "my-4"], [1, "inner_sec"], [1, "sub", "text-center", "mb-lg-5", "mb-3"], [1, "address", "row"], [1, "col-lg-4", "address-grid"], [1, "row", "address-info"], [1, "col-md-3", "address-left", "text-center"], [1, "far", "fa-map"], [1, "col-md-9", "address-right", "text-left"], [1, "far", "fa-envelope"], ["href", "mailto:ventas_refrilav@hotmail.com"], [1, "fas", "fa-mobile-alt"], [1, "contact-map"], ["src", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8657.273969490709!2d-96.73467782668052!3d17.058692701949756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c7232adcf02b93%3A0x5aed5e695748cfa!2zTcOzZHVsbyBI!5e0!3m2!1ses-419!2smx!4v1679585217548!5m2!1ses-419!2smx", "width", "600", "height", "450", "allowfullscreen", "", "loading", "lazy", "referrerpolicy", "no-referrer-when-downgrade", 2, "border", "0"]],
+  consts: [["id", "home", 1, "banner-top", "container-fluid"], [1, "banner_inner"], [1, "services-breadcrumb"], [1, "inner_breadcrumb"], [1, "short"], [3, "routerLink"], [1, "banner-bottom-wthreelayouts", "py-lg-5", "py-3"], [1, "container"], [1, "tittle-w3layouts", "text-center", "my-lg-4", "my-4"], [1, "inner_sec"], [1, "sub", "text-center", "mb-lg-5", "mb-3"], [1, "address", "row"], [1, "col-lg-4", "address-grid"], [1, "row", "address-info"], [1, "col-md-3", "address-left", "text-center"], [1, "far", "fa-map"], [1, "col-md-9", "address-right", "text-left"], [1, "col-lg-5", "address-grid"], [1, "far", "fa-envelope"], ["href", "mailto:ventas_refrilav@hotmail.com"], ["href", "mailto:ventas_refrilav@gmail.com"], [1, "col-lg-3", "address-grid"], [1, "fas", "fa-mobile-alt"], [1, "contact-map"], ["src", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8657.273969490709!2d-96.73467782668052!3d17.058692701949756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c7232adcf02b93%3A0x5aed5e695748cfa!2zTcOzZHVsbyBI!5e0!3m2!1ses-419!2smx!4v1679585217548!5m2!1ses-419!2smx", "width", "600", "height", "450", "allowfullscreen", "", "loading", "lazy", "referrerpolicy", "no-referrer-when-downgrade", 2, "border", "0"], ["src", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6698.851247233468!2d-96.73268614543069!3d17.058571718187103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c7226b6a5f5471%3A0x63c4b38c77e61155!2sPerif%C3%A9rico%20156a%2C%20Zona%20Lunes%20Feb%2009%2C%20Centro%2C%2068000%20Oaxaca%20de%20Ju%C3%A1rez%2C%20Oax.!5e0!3m2!1ses-419!2smx!4v1680190784274!5m2!1ses-419!2smx", "width", "600", "height", "450", "allowfullscreen", "", "loading", "lazy", "referrerpolicy", "no-referrer-when-downgrade", 2, "border", "0"]],
   template: function ContactoComponent_Template(rf, ctx) {
     if (rf & 1) {
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0);
@@ -313,36 +313,58 @@ ContactoComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_2_
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](24, "i", 15);
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](25, "div", 16)(26, "h6");
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](27, "Direcci\u00F3n");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](27, "Matriz");
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](28, "p");
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](29, "M\u00F3dulo H local 10-B, Zona Seca, Central de Abastos");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](30, "hr");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](31, "h6");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](32, "Sucursal");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](33, "p");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](34, "M\u00F3dulo H local 10-B, Zona Seca, Central de Abastos");
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](30, "div", 12)(31, "div", 13)(32, "div", 14);
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](33, "i", 17);
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](35, "div", 17)(36, "div", 13)(37, "div", 14);
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](38, "i", 18);
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](34, "div", 16)(35, "h6");
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](36, "Correo electr\u00F3nico");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](39, "div", 16)(40, "h6");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](41, "Correo electr\u00F3nico");
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](37, "p");
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](38, "Ventas_refrilav@hotmail.com ");
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](39, "a", 18);
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](40, " Enviar Correo");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](42, "br");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](43, "p");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](44, "Ventas_refrilav@hotmail.com ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](45, "a", 19);
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](46, " Enviar Correo");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](47, "br")(48, "hr")(49, "br");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](50, "p");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](51, "Ventas_refrilav@gmail.com ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](52, "a", 20);
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](53, " Enviar Correo");
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](41, "div", 12)(42, "div", 13)(43, "div", 14);
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](44, "i", 19);
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](54, "div", 21)(55, "div", 13)(56, "div", 14);
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](57, "i", 22);
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](45, "div", 16)(46, "h6");
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](47, "Telefono");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](58, "div", 16)(59, "h6");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](60, "Telefonos");
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](48, "br");
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](49, "p");
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](50, "+52 9516888359");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](61, "p");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](62, "Matriz: 9516888359");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](63, "p");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](64, "Sucursal: 9511596123");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](65, "p");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](66, "Gerente: 9512036655");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](67, "p");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](68, "Cotizaciones: 9514128776");
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()()()()()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](51, "div", 20);
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](52, "iframe", 21);
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](69, "div", 23);
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](70, "iframe", 24)(71, "iframe", 25);
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](53, "app-footer");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](72, "app-footer");
     }
     if (rf & 2) {
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](7);
@@ -525,6 +547,9 @@ __webpack_require__.r(__webpack_exports__);
 const _c0 = function () {
   return ["/"];
 };
+const _c1 = function () {
+  return ["/contacto"];
+};
 class ProductoComponent {
   constructor(router, CS, AR, PS) {
     this.router = router;
@@ -563,9 +588,9 @@ ProductoComponent.ɵfac = function ProductoComponent_Factory(t) {
 ProductoComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({
   type: ProductoComponent,
   selectors: [["app-producto"]],
-  decls: 61,
-  vars: 7,
-  consts: [["id", "home", 1, "banner-top", "container-fluid"], [1, "banner_inner"], [1, "services-breadcrumb"], [1, "inner_breadcrumb"], [1, "short"], [3, "routerLink"], [1, "banner-bottom-wthreelayouts", "py-lg-5", "py-3"], [1, "container"], [1, "inner-sec-shop", "pt-lg-4", "pt-3"], [1, "row"], [1, "col-lg-4", "single-right-left"], [1, "grid", "images_3_of_2"], [1, "flexslider1"], [1, "slides"], [1, "thumb-image"], ["data-imagezoom", "true", "alt", " ", 1, "img-fluid", 3, "src"], [1, "clearfix"], [1, "col-lg-8", "single-right-left", "simpleCart_shelfItem"], [1, "description"], [1, "footer-social", "text-left", "mt-lg-4", "mt-3"], [1, "mx-2"], ["href", "https://web.facebook.com/messages/t/102167084947412", "target", "_blank"], [1, "fab", "fa-facebook-messenger"], ["href", "https://wa.me/9514128776", "target", "_blank"], [1, "fab", "fa-whatsapp"], ["href", "mailto:ventas_refrilav@hotmail.com", "target", "_blank"], [1, "fab", "fa-google"], [1, "responsive_tabs"], ["id", "horizontalTab"], [1, "resp-tabs-list"], [1, "resp-tabs-container"], [1, "tab1"], [1, "single_page"], [1, "tab3"]],
+  decls: 67,
+  vars: 9,
+  consts: [["id", "home", 1, "banner-top", "container-fluid"], [1, "banner_inner"], [1, "services-breadcrumb"], [1, "inner_breadcrumb"], [1, "short"], [3, "routerLink"], [1, "banner-bottom-wthreelayouts", "py-lg-5", "py-3"], [1, "container"], [1, "inner-sec-shop", "pt-lg-4", "pt-3"], [1, "row"], [1, "col-lg-4", "single-right-left"], [1, "grid", "images_3_of_2"], [1, "flexslider1"], [1, "slides"], [1, "thumb-image"], ["data-imagezoom", "true", "alt", " ", 1, "img-fluid", 3, "src"], [1, "clearfix"], [1, "col-lg-8", "single-right-left", "simpleCart_shelfItem"], [1, "description"], [1, "footer-social", "text-left", "mt-lg-4", "mt-3"], [1, "mx-2"], ["href", "https://www.facebook.com/Refrilav.Oaxaca", "target", "_blank"], [1, "fab", "fa-facebook-f"], ["href", "https://web.facebook.com/messages/t/102167084947412", "target", "_blank"], [1, "fab", "fa-facebook-messenger"], ["href", "https://wa.me/9514128776", "target", "_blank"], [1, "fab", "fa-whatsapp"], ["href", "mailto:ventas_refrilav@hotmail.com", "target", "_blank"], [1, "fab", "fa-google"], [1, "fas", "fa-address-book"], [1, "responsive_tabs"], ["id", "horizontalTab"], [1, "resp-tabs-list"], [1, "resp-tabs-container"], [1, "tab1"], [1, "single_page"]],
   template: function ProductoComponent_Template(rf, ctx) {
     if (rf & 1) {
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 0);
@@ -593,33 +618,39 @@ ProductoComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_3_
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](32, "h5")(33, "strong");
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](34);
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](35, "ul", 19)(36, "li");
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](37, "Cotizar en: ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](35, "ul", 19);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](36, "hr");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](37, "li");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](38, "Cotizar en: ");
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](38, "li", 20)(39, "a", 21);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](40, "span", 22);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](39, "br");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](40, "li", 20)(41, "a", 21);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](42, "span", 22);
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](41, "li", 20)(42, "a", 23);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](43, "span", 24);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](43, "li", 20)(44, "a", 23);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](45, "span", 24);
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](44, "li", 20)(45, "a", 25);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](46, "span", 26);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](46, "li", 20)(47, "a", 25);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](48, "span", 26);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](49, "li", 20)(50, "a", 27);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](51, "span", 28);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](52, "li", 20)(53, "a", 5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](54, "span", 29);
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](47, "div", 16);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](48, "div", 27)(49, "div", 28)(50, "ul", 29)(51, "li");
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](52, "Descripcion");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](55, "div", 16);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](56, "div", 30)(57, "div", 31)(58, "ul", 32)(59, "li");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](60, "Descripcion");
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](53, "div", 30)(54, "div", 31)(55, "div", 32)(56, "h6");
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](57);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](58, "div", 33);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](59, "div", 32);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()()()()()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](60, "app-footer");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](61, "div", 33)(62, "div", 34)(63, "div", 35)(64, "h6");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](65);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()()()()()()()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](66, "app-footer");
     }
     if (rf & 2) {
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](7);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction0"](6, _c0));
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction0"](7, _c0));
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](16);
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpropertyInterpolate"]("src", ctx.producto.imagen, _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵsanitizeUrl"]);
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](4);
@@ -628,7 +659,9 @@ ProductoComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_3_
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate1"]("Modelo: ", ctx.producto.modelo, "");
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](3);
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate1"]("Marca: ", ctx.producto.marca, "");
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](23);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](19);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction0"](8, _c1));
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](12);
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate"](ctx.producto.descripcion);
     }
   },
@@ -832,7 +865,7 @@ __webpack_require__.r(__webpack_exports__);
 class CategoriasService {
   constructor(http) {
     this.http = http;
-    this.URL = "https://www.braquetes.mx/refaccionaria";
+    this.URL = "https://refrilav-oaxaca.com/refaccionaria";
   }
   getAll() {
     return this.http.get(`${this.URL}/admin/categorias/getAll.php`);
@@ -869,7 +902,7 @@ __webpack_require__.r(__webpack_exports__);
 class ProductoService {
   constructor(http) {
     this.http = http;
-    this.URL = "https://www.braquetes.mx/refaccionaria";
+    this.URL = "https://refrilav-oaxaca.com/refaccionaria";
   }
   getAll() {
     return this.http.get(`${this.URL}/admin/productos/getAll.php`);
@@ -909,7 +942,7 @@ __webpack_require__.r(__webpack_exports__);
 class SearchService {
   constructor(http) {
     this.http = http;
-    this.URL = "https://www.braquetes.mx/refaccionaria";
+    this.URL = "http://refrilav-oaxaca.com/refaccionaria";
   }
   search(search) {
     return this.http.get(`${this.URL}/admin/search.php?search=${search}`);

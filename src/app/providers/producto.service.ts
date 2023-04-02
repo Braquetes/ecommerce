@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class ProductoService {
 
-  URL = "https://www.braquetes.mx/refaccionaria";
+  URL = "https://refrilav-oaxaca.com/refaccionaria";
 
   constructor(private http: HttpClient) { }
 
