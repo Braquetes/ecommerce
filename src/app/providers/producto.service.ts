@@ -6,12 +6,13 @@ import { Injectable } from '@angular/core';
 })
 export class ProductoService {
 
-  URL = "https://refrilav-oaxaca.com/refaccionaria";
+  // URL = "http://localhost:8080";
+  URL = "http://braquetes.com.mx";
 
   constructor(private http: HttpClient) { }
 
   getAll(){
-    return this.http.get(`${this.URL}/admin/productos/getAll.php`)
+    return this.http.get(`${this.URL}/products`)
   }
 
   getOneID(id: number){
@@ -19,6 +20,6 @@ export class ProductoService {
   }
   
   getOne(id: number){
-    return this.http.get(`${this.URL}/admin/productos/getOne.php?idProducto=${id}`);
+    return this.http.get(`${this.URL}/product/${id}`);
   }
 }
