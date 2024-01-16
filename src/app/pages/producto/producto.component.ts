@@ -37,7 +37,7 @@ export class ProductoComponent {
 
   getProducto(id: number){
     this.PS.getOne(id).subscribe((data: any) => {
-      console.log(data);
+      console.log(data, "producto", id);
       this.producto = data;
     });
   }

@@ -44,7 +44,7 @@ export class TiendaComponent {
 
   getProductosID(id: number){
     this.PS.getOneID(id).subscribe((data: any) => {
-      console.log(data);
+      console.log(data, id);
       this.productos = data;
     });
   }

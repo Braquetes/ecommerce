@@ -1,0 +1,26 @@
+[
+    {
+        "idCategoria": 15,
+        "categoria": "BÁSCULA DE PAQUETERÍA"
+    },
+    {
+        "idCategoria": 16,
+        "categoria": "INDICADORES"
+    },
+    {
+        "idCategoria": 17,
+        "categoria": "BÁSCULAS COLGANTES"
+    },
+    {
+        "idCategoria": 18,
+        "categoria": "ACCESORIOS BÁSCULAS"
+    },
+    {
+        "idCategoria": 33,
+        "categoria": "UTENSILIOS PARA RESTAURANTE Y BAR"
+    },
+    {
+        "idCategoria": 34,
+        "categoria": "MATERIAL PUNTO DE VENTA"
+    }
+]
