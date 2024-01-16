@@ -9,3 +9,10 @@
  max-height: 400px;
 //  border: 1px solid black;
 }
+
+.corte {
+  width: 300px;          /* Ancho fijo en píxeles */
+  height: 250px;         /* Altura fija en píxeles */
+  object-fit: contain;   /* Ajustar la imagen para que se ajuste completamente al contenedor */
+  object-position: center center; /* Centrar la imagen dentro del contenedor */
+}
