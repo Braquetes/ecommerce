@@ -11,22 +11,23 @@ import * as unorm from 'unorm';
 })
 export class SearchService {
 
-  // URL = "https://refrilav-oaxaca.com/refaccionaria";
-  private jsonUrl = 'assets/json/productos.json';
+  // URL = "http://localhost:8000";
+  // private jsonUrl = 'assets/json/productos.json';
+  URL = 'https://api-ecommerce.braquetes.com.mx';
 
 
   constructor(private http: HttpClient) { }
 
-  getAll(): Observable<any[]> {
-    return this.http.get<any[]>(this.jsonUrl);
+  getAll(): any {
+    return this.http.get(`${this.URL}/productos`);
   }
 
   search(query: string): Observable<any[]> {
     const normalizedQuery = this.normalizeText(query.toLowerCase());
 
     return this.getAll().pipe(
-      map(products => products.filter(
-        product => 
+      map((products: any) => products.filter(
+        (product: any) => 
           this.normalizeText(product.producto.toLowerCase()).includes(normalizedQuery) ||
           this.normalizeText(product.modelo.toLowerCase()).includes(normalizedQuery) ||
           this.normalizeText(product.descripcion.toLowerCase()).includes(normalizedQuery)

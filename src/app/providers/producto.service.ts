@@ -7,27 +7,22 @@ import { Observable, map } from 'rxjs';
 })
 export class ProductoService {
 
-  // URL = "http://localhost:8080";
-  // URL = "http://braquetes.com.mx";
-
-  private jsonUrl = 'assets/json/productos.json';
+  // URL = "http://localhost:8000";
+  // private jsonUrl = 'assets/json/productos.json';
+  URL = 'https://api-ecommerce.braquetes.com.mx';
 
   constructor(private http: HttpClient) { }
 
   getAll(): Observable<any> {
-    return this.http.get<any>(this.jsonUrl);
+    return this.http.get(`${this.URL}/productos`);
   }
 
-  getOneID(id: number): Observable<any[]> {
-    return this.getAll().pipe(
-      map(products => products.filter((product: any) => product.idCategoria == id))
-    );
+  getOneID(id: number): Observable<any> {
+    return this.http.get(`${this.URL}/productos/categoria/${id}`);
   }
   
   getOne(id: number): Observable<any> {
-    return this.getAll().pipe(
-      map(products => products.find((product: any) => product.idProducto == id))
-    );
+    return this.http.get(`${this.URL}/productos/${id}`);
   }
 
 }

@@ -7,19 +7,18 @@ import { Observable, map } from 'rxjs';
 })
 export class CategoriasService {
 
-  // URL = "https://refrilav-oaxaca.com/refaccionaria";
-  private jsonUrl = 'assets/json/categorias.json';
+  // URL = "http://localhost:8000";
+  // private jsonUrl = 'assets/json/categorias.json';
+  URL = 'https://api-ecommerce.braquetes.com.mx';
 
   constructor(private http: HttpClient) { }
 
   getAll(): Observable<any> {
-    return this.http.get<any>(this.jsonUrl);
+    return this.http.get(`${this.URL}/categorias`);
   }
   
   getOne(id: number): Observable<any> {
-    return this.getAll().pipe(
-      map(categorias => categorias.find((categoria: any) => categoria.idCategoria == id))
-    );
+    return this.http.get(`${this.URL}/categorias/${id}`);
   }
 
 }
