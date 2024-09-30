@@ -7,18 +7,18 @@ import { Observable, map } from 'rxjs';
 })
 export class CategoriasService {
 
-  // URL = "http://localhost:8000";
-  // private jsonUrl = 'assets/json/categorias.json';
-  URL = 'https://api-ecommerce.braquetes.com.mx';
+  private jsonUrl = 'assets/json/categorias.json';
 
   constructor(private http: HttpClient) { }
 
   getAll(): Observable<any> {
-    return this.http.get(`${this.URL}/categorias`);
+    return this.http.get<any>(this.jsonUrl);
   }
   
   getOne(id: number): Observable<any> {
-    return this.http.get(`${this.URL}/categorias/${id}`);
+    return this.getAll().pipe(
+      map(categorias => categorias.find((categoria: any) => categoria.idCategoria == id))
+    );
   }
 
 }

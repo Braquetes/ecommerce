@@ -11,23 +11,22 @@ import * as unorm from 'unorm';
 })
 export class SearchService {
 
-  // URL = "http://localhost:8000";
-  // private jsonUrl = 'assets/json/productos.json';
-  URL = 'https://api-ecommerce.braquetes.com.mx';
+  // URL = "https://refrilav-oaxaca.com/refaccionaria";
+  private jsonUrl = 'assets/json/productos.json';
 
 
   constructor(private http: HttpClient) { }
 
-  getAll(): any {
-    return this.http.get(`${this.URL}/productos`);
+  getAll(): Observable<any[]> {
+    return this.http.get<any[]>(this.jsonUrl);
   }
 
   search(query: string): Observable<any[]> {
     const normalizedQuery = this.normalizeText(query.toLowerCase());
 
     return this.getAll().pipe(
-      map((products: any) => products.filter(
-        (product: any) => 
+      map(products => products.filter(
+        product =>
           this.normalizeText(product.producto.toLowerCase()).includes(normalizedQuery) ||
           this.normalizeText(product.modelo.toLowerCase()).includes(normalizedQuery) ||
           this.normalizeText(product.descripcion.toLowerCase()).includes(normalizedQuery)
@@ -38,4 +37,5 @@ export class SearchService {
   normalizeText(text: string): string {
     return unorm.nfd(text).replace(/[\u0300-\u036f]/g, ''); // Normaliza y elimina diacríticos
   }
+
 }
